@@ -13,7 +13,7 @@ public class SumAverageRunningIntW {
             ++number;
         }
 
-        average = sum / UPPERBOUND;
+        average = (double)sum / (double)UPPERBOUND;
 
         System.out.println("The sum of 1 to 100 is: "+ sum +"\n The average is: "+ average);
 

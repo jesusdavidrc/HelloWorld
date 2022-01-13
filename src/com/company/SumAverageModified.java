@@ -10,15 +10,14 @@ public class SumAverageModified {
 
         for (int index = LOWERBOUND ; index <= UPPERBOUND; ++index){
              // System.out.println();
-            //sum += count;
+            sum += index;
             ++counter;
         }
         System.out.println("counter = " + counter);
 
 
-        //average = sum / UPPERBOUND;
-
-       // System.out.println("The sum of 1 to 100 is: "+ sum +"\n The average is: "+ average);
+         average = (double)sum / (double)counter;
+         System.out.println("The sum of 1 to 100 is: "+ sum +"\n The average is: "+ average);
 
     }
 }
