@@ -18,7 +18,9 @@ public class Fibonacci {
             // Compute F(n), print it and add to sum
             fn = fnMinus1 + fnMinus2;
 
-            // Increment the index n and shift the numbers for the next iteration
+            sum = sum + fn;
+
+                    // Increment the index n and shift the numbers for the next iteration
             ++n;
             fnMinus2 = fnMinus1;
             fnMinus1 = fn;
@@ -27,8 +29,8 @@ public class Fibonacci {
 
         }
 
-        //average = (double)fn / (double)nMax;
-      //  System.out.println("\n average is = " + average);
+        average = (double)sum / (double)nMax;
+        System.out.println("\n average is = " + average);
 
 
     }
